@@ -1,0 +1,208 @@
+/* start media ==> container */
+@media (max-width: 299px){
+    .ownContainer{
+        width: 90%;
+    }
+}
+@media (min-width: 300px) and (max-width: 499px){
+    .ownContainer{
+        width: 270px;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px){
+    .ownContainer{
+        width: 470px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .ownContainer{
+        width: 738px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .ownContainer{
+        width: 962px;
+    }
+}
+/* end media ==> container */
+
+
+/* start parent media*/
+@media (max-width: 767px){
+    .parent>div{
+        width: 100% !important;
+    }
+}
+/* end parent media*/
+
+
+/* start top media */
+@media (max-width: 767px){
+    .parent .top>div{
+        width: 100% !important;
+    }
+    
+    /* start person info */
+    .parent .top .personalInfo{
+        height: 150px;
+        width: 80% !important;
+    }    
+    .parent .top .personalInfo::before{
+        border-width: 75.5px 0px 75.5px 63px;
+        right: -63px;
+    }
+    .parent .top .personalInfo::after{
+        border-width: 75px 0px 75px 49px;
+    }
+    .parent .top .personalInfo .image{
+        width: 90px;
+        height: 90px;
+    }
+    .parent .top .personalInfo .information{
+        max-width: 50%;
+    }
+    .parent .top .personalInfo .information h2{
+        font-size: 20px;
+    }
+    .parent .top .personalInfo .information span{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    /* end person info */
+}
+@media (min-width: 768px) and (max-width: 991px){
+    /* start person info */
+    .parent .top .personalInfo{
+        height: 180px;
+        width: 39% !important;
+    }    
+    .parent .top .personalInfo::before{
+        border-width: 90px 0px 90px 63px;
+        right: -63px;
+    }
+    .parent .top .personalInfo::after{
+        border-width: 90px 0px 90px 49px;
+    }
+    .parent .top .personalInfo .image{
+        width: 120px;
+        height: 120px;
+    }
+    .parent .top .personalInfo .information h2{
+        font-size: 28px;
+    }
+    .parent .top .personalInfo .information span{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    /* end person info */
+}
+/* end top media */
+
+
+/* start special header */
+/* @media (max-width: 767px){
+    .specialHeader h2{
+        font-size: 18px;
+    }
+} */
+@media (max-width: 991px){
+    .specialHeader h2{
+        font-size: 18px;
+    }
+}
+/* end special header */
+
+
+/* start work experience */
+@media (max-width: 991px){
+    .work .works .job{
+        margin: 20px;
+        padding: 5px 15px;
+    }
+    .work .works .job h3{
+        font-size: 17px;
+    }
+    .work .works .job span{
+        margin-right: 15px;
+        font-size: 12px;
+    }
+}
+/* @media (max-width: 767px){
+    .work .works .job{
+        margin: 20px;
+        padding: 5px 15px;
+    }
+    .work .works .job h3{
+        font-size: 17px;
+    }
+    .work .works .job span{
+        margin-right: 15px;
+        font-size: 12px;
+    }
+} */
+/* end work experience */
+
+
+/* start work education */
+@media (max-width: 991px){
+    .education .places>div h3{
+        font-size: 17px;
+    }
+    .education .places>div h3 span{
+        font-size: 10px;
+        margin-left: 15px;
+    }
+    .education .places>div h4{
+        font-size: 11px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .education .places>div h3 span{
+        font-size: 14px;
+    }
+    .education .places>div h4{
+        font-size: 12px;
+    }
+}
+/* @media (max-width: 767px){
+    .education .places>div h3{
+        font-size: 17px;
+    }
+    .education .places>div h3 span{
+        font-size: 10px;
+        margin-left: 15px;
+    }
+    .education .places>div h4{
+        font-size: 11px;
+    }
+} */
+/* end work education */
+
+
+/* start work profile */
+@media (max-width: 991px){
+    .right .profile div:not(.specialHeader) p{
+        font-size: 15px;
+    }
+}
+/* @media (max-width: 767px){
+    .right .profile div:not(.specialHeader) p{
+        font-size: 15px;
+    }
+} */
+/* end work profile */
+
+
+/* start work footer */
+@media (max-width: 991px){
+    footer{
+        height: 25px;
+    }
+}
+/* @media (max-width: 767px){
+    footer{
+        height: 25px;
+    }
+} */
+
+/* end work footer */

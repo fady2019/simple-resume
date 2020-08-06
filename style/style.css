@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #9c27b0;
+    --main-background-color: #2d2d2d;
+}
+
+body{
+    background-color:  var(--main-background-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.ownContainer{
+    width: 1000px;
+    margin: auto;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.parent>div.top{width: 100%;}
+.parent>div:not(.top){
+    width: 49%;
+}
+
+/* start top */
+    /* start person info */
+.parent .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.parent .top>div{
+    margin-top: 50px;
+}
+.parent .top .personalInfo{
+    position: relative;
+    width: 39%;
+    height: 200px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+    z-index: 2;
+}
+.parent .top .personalInfo::before,
+.parent .top .personalInfo::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+.parent .top .personalInfo::before{
+    right: -69px;
+    border-width: 100px 0px 100px 70px;
+    border-color: transparent transparent transparent #fafafa;
+    z-index: 0;
+}
+.parent .top .personalInfo::after{
+    right: -48px;
+    border-width: 100px 1px 100px 49px;
+    border-color: transparent transparent transparent var(--main-color);
+    z-index: 1;
+}
+
+.parent .top .personalInfo .image{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 2px #fff;
+}
+.parent .top .personalInfo .image img{
+    width: 100%;
+    height: 100%;
+}
+.parent .top .personalInfo .information{
+    max-width: 50%;
+}
+.parent .top .personalInfo .information h2{
+    color: #FFF;
+    font-size: 35px;
+    line-height: 1.4;
+}
+.parent .top .personalInfo .information span{
+    display: block;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+    /* end person info */
+
+    /* .start contact me */
+.top .contactMe{
+    width: 49%;
+}
+.top .contactMe>div{
+    padding: 10px 0;
+    border: 0;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: var(--main-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.top .contactMe>div:last-of-type{
+    border-bottom-width: 2px;
+}
+.top .contactMe>div>div{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+}
+.top .contactMe>div>div i{
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top .contactMe>div span{
+    color: #fff;
+    font: 18px;
+    margin-left: 25px;
+}
+.top .contactMe>div span a{
+    color: #fff;
+}
+    /* end contact me */
+/* end top */
+
+
+/* start left */
+    /* start work */
+.work .works .job{
+    color: #fff;
+    border-left: 2px solid var(--main-color);
+    margin: 20px;
+    padding: 5px 15px;
+}
+.work .works .job h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.work .works .job span{
+    margin-right: 20px;
+}
+    /* end work */
+
+    /* start education */
+.education .places>div{
+    color: #fff;
+    border-left: 2px solid var(--main-color);
+    margin: 20px;
+    padding: 5px 15px;
+}
+.education .places>div h3{
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.education .places>div h3 span{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--main-color);
+    margin-left: 50px;
+}
+.education .places>div h4 i{
+    color: var(--main-color)
+}
+    /* end education */
+
+
+    /* start features */
+.left .features .featuresContainer{ 
+color: #fff;
+border-left: 2px solid var(--main-color);
+margin: 20px;
+padding: 5px 15px
+}
+.left .features .featuresContainer .feature #langInfo{
+    margin: 10px 0;
+}
+.left .features .featuresContainer .feature #langInfo #lang{
+    font-size: 15px;
+}
+.left .features .featuresContainer .feature #progress{
+    width: 90%;
+    height: 6px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.left .features .featuresContainer .feature #progress span{
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+}
+.left .features .featuresContainer .feature #progress span#cleanCode{ width: 95%; }
+.left .features .featuresContainer .feature #progress span#creativity{ width: 85%; }
+.left .features .featuresContainer .feature #progress span#animation{ width: 80%; }
+    /* end features */
+
+/* end left */
+
+/* start right */
+    /* start profile */
+.right .profile div.para{
+    color: #fff;
+    border-left: 2px solid var(--main-color);
+    margin: 20px;
+    padding: 5px 15px;
+}
+.right .profile div:not(.specialHeader) p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+    /* end profile */
+
+
+    /* start skills */
+.right .skills .skillContainer{ 
+    color: #fff;
+    border-left: 2px solid var(--main-color);
+    margin: 20px;
+    padding: 5px 15px
+}
+.right .skills .skillContainer .skill #langInfo{
+    margin: 10px 0;
+}
+.right .skills .skillContainer .skill #langInfo #lang{
+    font-size: 15px;
+}
+.right .skills .skillContainer .skill #progress{
+    width: 90%;
+    height: 6px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.right .skills .skillContainer .skill #progress span{
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+}
+.right .skills .skillContainer .skill #progress span#html{ width: 90%; }
+.right .skills .skillContainer .skill #progress span#css{ width: 80%; }
+.right .skills .skillContainer .skill #progress span#sass{ width: 75%; }
+.right .skills .skillContainer .skill #progress span#js{ width: 70%; }
+.right .skills .skillContainer .skill #progress span#jq{ width: 85%; }
+.right .skills .skillContainer .skill #progress span#vue{ width: 80%; }
+    /* end skills */
+
+
+/* end right */
+
+/* start global */
+.marginTop{
+    margin-top: 50px;
+}
+
+.main-color{ color: var(--main-color); }
+
+.specialHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.specialHeader>div{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+}
+.specialHeader i{
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.specialHeader h2{
+    color: #fff;
+    padding: 10px 15px;
+    border-bottom: 2px solid var(--main-color);
+    text-transform: uppercase
+}
+/* end global */
+
+
+/* start footer */
+footer{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+/* end footer */
